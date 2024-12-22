@@ -1,0 +1,42 @@
+{
+    "name": "scholarship-opportunities-chatbot",
+    "version": "1.0.0",
+    "description": "A chatbot plugin for fetching and processing scholarship opportunities worldwide.",
+    "main": "index.js",
+    "scripts": {
+      "start": "node dist/main.js",
+      "build": "tsc",
+      "dev": "ts-node-dev --respawn src/main.ts",
+      "test": "jest"
+    },
+    "dependencies": {
+      "@nestjs/common": "^10.0.0",
+      "@nestjs/core": "^10.0.0",
+      "axios": "^1.5.0",
+      "dotenv": "^16.0.3"
+    },
+    "devDependencies": {
+      "@nestjs/cli": "^10.0.0",
+      "@nestjs/schematics": "^10.0.0",
+      "@nestjs/testing": "^10.0.0",
+      "@types/node": "^20.0.0",
+      "jest": "^29.0.0",
+      "ts-jest": "^29.0.0",
+      "ts-node-dev": "^2.0.0",
+      "typescript": "^5.0.0"
+    },
+    "jest": {
+      "moduleFileExtensions": ["js", "json", "ts"],
+      "rootDir": "src",
+      "testRegex": ".*\\.spec\\.ts$",
+      "transform": {
+        "^.+\\.(t|j)s$": "ts-jest"
+      },
+      "collectCoverageFrom": ["**/*.(t|j)s"],
+      "coverageDirectory": "../coverage",
+      "testEnvironment": "node"
+    },
+    "author": "Your Name",
+    "license": "MIT"
+  }
+  
